@@ -7,6 +7,7 @@ require 'vendor/autoload.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
 
     $mail = new PHPMailer(true);
@@ -27,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Content
         $mail->isHTML(true);
-        $mail->Subject = 'Portfolio Request';
+        $mail->Subject = $subject;
         $mail->Body    = "Name: $name<br>Email: $email<br>Message: $message";
         $mail->AltBody = "Name: $name\nEmail: $email\nMessage: $message";
 
@@ -36,5 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
+} else {
+    echo "Invalid request method.";
 }
 ?>
