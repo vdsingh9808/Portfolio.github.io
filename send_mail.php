@@ -14,10 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.example.com'; // Set the SMTP server to send through
+        $mail->Host = 'smtp-relay.brevo.com'; // Set the SMTP server to send through
         $mail->SMTPAuth = true;
-        $mail->Username = 'vdsingh9808@gmail.com'; // SMTP username
-        $mail->Password = 'Parthvi@9808'; // SMTP password
+        $mail->Username = '834613001@smtp-brevo.com'; // SMTP username
+        $mail->Password = 'bdF3w1tJsUZgypPB'; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
