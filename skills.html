@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishwadeep Singh | Full Stack Developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f1a;
+      color: #f0f0f0;
+    }
+    nav {
+      background-color: transparent;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #00e0ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px #00e0ff;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 36px;
+      color: #00e0ff;
+    }
+    header p {
+      font-size: 16px;
+      color: #b0c4de;
+      letter-spacing: 2px;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      text-align: center;
+      color: #00e0ff;
+      margin-bottom: 30px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .skills-list span {
+      background-color: #181828;
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .skill-details {
+      background: #181828;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .skill-details h3 {
+      color: #00e0ff;
+      margin-bottom: 10px;
+    }
+    .skill-details p {
+      color: #ccc;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#projects">PROJECTS</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <header>
+    <img src="img/vishwadeep.jpg" alt="Vishwadeep Singh"/>
+    <h1>Vishwadeep Singh</h1>
+    <p>FULL STACK DEVELOPER</p>
+  </header>
+
+  <div class="container">
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span><i class="fab fa-node-js"></i> Node.js</span>
+        <span><i class="fab fa-react"></i> React</span>
+        <span><i class="fab fa-js"></i> JavaScript</span>
+        <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+        <span><i class="fas fa-database"></i> PostgreSQL</span>
+        <span><i class="fas fa-tools"></i> DevOps</span>
+        <span><i class="fas fa-cloud"></i> AWS & Cloud</span>
+      </div>
+
+      <div class="skill-details">
+        <h3>Node.js</h3>
+        <p>Built RESTful APIs, real-time systems, and backend services using Express.js. Used middleware, JWT authentication, and integrations with PostgreSQL and Redis.</p>
+
+        <h3>React</h3>
+        <p>Developed interactive UIs using React with state management (Redux), hooks, form validation, and component-based architecture.</p>
+
+        <h3>JavaScript</h3>
+        <p>Used ES6+ features to write clean, maintainable code. Implemented logic-heavy modules on both client and server-side projects.</p>
+
+        <h3>Bootstrap</h3>
+        <p>Used Bootstrap 4/5 for responsive design, grid layouts, and modern UI components across web projects and admin panels.</p>
+
+        <h3>PostgreSQL</h3>
+        <p>Designed relational databases, wrote optimized queries, created indexes and stored procedures for large data sets.</p>
+
+        <h3>DevOps</h3>
+        <p>Implemented CI/CD pipelines using GitHub Actions and Jenkins. Automated deployments and managed containerized services with Docker.</p>
+
+        <h3>AWS & Cloud</h3>
+        <p>Deployed scalable web applications on AWS EC2, S3, Lambda. Managed DNS, security groups, and SSL using Route 53 and CloudFront.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
