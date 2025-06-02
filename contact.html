@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hire Vishwadeep - Contact</title>
+      <link rel="icon" type="image/png" href="img/vishwadeep.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -143,3 +144,43 @@
 </body>
 
 </html>
+<script>
+  document.addEventListener("keydown", function (e) {
+    // Disable Ctrl+U
+    if (e.ctrlKey && e.key === 'u') {
+      e.preventDefault();
+    }
+
+    // Disable Ctrl+Shift+I (DevTools)
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+      e.preventDefault();
+    }
+
+    // Disable F12 (DevTools)
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+  });
+
+  // Disable right-click
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+</script>
+<div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,hi,fr,es,de,pa,zh-CN,ja',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+

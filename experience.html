@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vishwadeep Singh | Experience</title>
+    <link rel="icon" type="image/png" href="img/vishwadeep.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -78,3 +79,26 @@
 
 </body>
 </html>
+<script>
+  document.addEventListener("keydown", function (e) {
+    // Disable Ctrl+U
+    if (e.ctrlKey && e.key === 'u') {
+      e.preventDefault();
+    }
+
+    // Disable Ctrl+Shift+I (DevTools)
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+      e.preventDefault();
+    }
+
+    // Disable F12 (DevTools)
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+  });
+
+  // Disable right-click
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+</script>
