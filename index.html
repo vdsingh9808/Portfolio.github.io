@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vishwadeep Singh | Full Stack Developer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', sans-serif;
       background-color: #0f0f1a;
@@ -53,7 +49,7 @@
     .container {
       padding: 40px 20px;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: auto;
     }
     .section {
       margin-bottom: 60px;
@@ -63,43 +59,50 @@
       color: #00e0ff;
       margin-bottom: 30px;
     }
-    .project-card, .skills-list {
+    .project-card {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      justify-items: center;
     }
-    .project-card div, .skills-list span {
+    .project-card .card {
       background-color: #181828;
       padding: 20px;
-      border: 1px solid #2c2c3d;
-      border-radius: 12px;
+      border-radius: 10px;
       text-align: center;
-      transition: all 0.3s ease;
     }
-    .project-card div:hover, .skills-list span:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 10px #00e0ff66;
+    .project-card .card:hover {
+      box-shadow: 0 0 15px #00e0ff66;
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
     }
     .project-card h3 {
-      color: #ffffff;
-      margin-bottom: 8px;
-      font-size: 18px;
+      margin-bottom: 10px;
+      color: #fff;
     }
     .project-card p {
       font-size: 14px;
       color: #ccc;
     }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
     .skills-list span {
+      background-color: #181828;
+      padding: 12px 20px;
+      border-radius: 8px;
       color: #fff;
-      font-weight: 500;
       font-size: 14px;
       display: flex;
       align-items: center;
-      gap: 8px;
-    }
-    .skills-list i {
-      font-size: 20px;
+      gap: 10px;
     }
     #experience ul {
       list-style: none;
@@ -128,7 +131,7 @@
       border-radius: 8px;
       background: #00e0ff;
       color: #000;
-      font-weight: 700;
+      font-weight: bold;
       cursor: pointer;
     }
     footer {
@@ -140,6 +143,7 @@
   </style>
 </head>
 <body>
+
   <nav>
     <a href="#projects">PROJECTS</a>
     <a href="#skills">SKILLS</a>
@@ -148,83 +152,83 @@
   </nav>
 
   <header>
-    <img src="img/vishwadeep.jpg" alt="Vishwadeep Singh">
+    <img src="img/vishwadeep.jpg" alt="Vishwadeep Singh"/>
     <h1>Vishwadeep Singh</h1>
     <p>FULL STACK DEVELOPER</p>
   </header>
 
   <div class="container">
-  <section class="section" id="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    
-    <div class="project-card">
-      <img src="/img/autox.jpg" alt="AutoX Project" />
-      <h3>AutoX</h3>
-      <p>A comprehensive automotive portal for news, car reviews, and comparisons. Built using Core PHP with MVC, CodeIgniter, and RESTful APIs.</p>
-      <a href="https://www.autox.com/" target="_blank">Visit Site</a>
-    </div>
 
-    <div class="project-card">
-      <img src="xitetech.jpg" alt="Xitetech Project" />
-      <h3>Xitetech</h3>
-      <p>A business-oriented social media platform developed using Node.js and React. Offers features like posting, networking, and team collaboration.</p>
-      <a href="#" target="_blank">Visit Site</a>
-    </div>
-
-    <div class="project-card">
-      <img src="https://via.placeholder.com/300x180" alt="SalesProfessionals Project" />
-      <h3>SalesProfessionals</h3>
-      <p>A networking platform for sales professionals to connect, share leads, and build profiles. Built with PHP and modern frontend tools.</p>
-      <a href="#" target="_blank">Visit Site</a>
-    </div>
-
-    <div class="project-card">
-      <img src="https://via.placeholder.com/300x180" alt="HRMS Project" />
-      <h3>HRMS</h3>
-      <p>An employee management software system for attendance, payroll, and leave tracking. Developed using Node.js and PostgreSQL.</p>
-      <a href="#" target="_blank">Visit Site</a>
-    </div>
-
-  </div>
-</section>
-
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <div class="card">
+          <img src="img/autox.jpg" alt="AutoX"/>
+          <h3>AutoX</h3>
+          <p>Automotive news & reviews portal development</p>
+        </div>
+        <div class="card">
+          <img src="img/autoX-P.jpg" alt="AutoX UI"/>
+          <h3>AutoX Portal UI</h3>
+          <p>Mobile-friendly redesign with performance enhancements</p>
+        </div>
+        <div class="card">
+          <img src="img/Convergence-Plus-Project.jpg" alt="Convergence Plus"/>
+          <h3>Convergence Plus</h3>
+          <p>Telecom news portal built using PHP and .NET</p>
+        </div>
+        <div class="card">
+          <img src="img/oyetrips.png" alt="OyeTrips"/>
+          <h3>OyeTrips</h3>
+          <p>Travel booking engine using CodeIgniter with real-time pricing</p>
+        </div>
+        <div class="card">
+          <img src="img/comnetexhibition.jpg" alt="Comnet Exhibitions"/>
+          <h3>Comnet Exhibitions</h3>
+          <p>Exhibition marketing platform connecting Indian industry to global expos</p>
+        </div>
+        <div class="card">
+          <img src="img/convergenceindia.jpg" alt="Convergence India Expo"/>
+          <h3>Convergence India Expo</h3>
+          <p>India’s biggest technology expo digital portal</p>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="skills">
       <h2>Skills</h2>
       <div class="skills-list">
         <span><i class="fab fa-node-js"></i> Node.js</span>
         <span><i class="fab fa-react"></i> React</span>
-        <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
         <span><i class="fab fa-js"></i> JavaScript</span>
+        <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
         <span><i class="fas fa-database"></i> PostgreSQL</span>
         <span><i class="fas fa-tools"></i> DevOps</span>
-        <span><i class="fas fa-cloud"></i> Cloud</span>
-        <span><i class="fas fa-cloud-upload-alt"></i> Cloud</span>
+        <span><i class="fas fa-cloud"></i> AWS & Cloud</span>
       </div>
     </section>
 
     <section class="section" id="experience">
       <h2>Experience</h2>
       <ul>
-        <li><strong>Exhibition India Group</strong>: Developed AutoX, Xitetech, HRMS using PHP, Node.js, and AWS</li>
-        <li><strong>SRDV Pvt. Ltd.</strong>: Delivered 10+ travel platforms including Oyetrips using CodeIgniter and Laravel</li>
+        <li><strong>Exhibition India Group</strong>: Built AutoX, Xitetech, and HRMS using PHP, Node.js, AWS</li>
+        <li><strong>SRDV Pvt. Ltd.</strong>: Delivered 10+ travel portals including Oyetrips (Laravel/CI)</li>
       </ul>
     </section>
 
     <section class="section" id="contact">
       <h2>Contact</h2>
       <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message" rows="5"></textarea>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="5" placeholder="Your Message"></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
+
   </div>
 
-  <footer>
-    &copy; 2025 Vishwadeep Singh. All rights reserved.
-  </footer>
+  <footer>&copy; 2025 Vishwadeep Singh. All rights reserved.</footer>
+
 </body>
 </html>
