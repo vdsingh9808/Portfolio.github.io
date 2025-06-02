@@ -90,6 +90,7 @@
         <a href="experience">EXPERIENCE</a>
         <a href="contact">CONTACT</a>
     </nav>
+<div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
 
     <h2>Let's Collaborate or Hire Me</h2>
 
@@ -167,13 +168,10 @@
     e.preventDefault();
   });
 </script>
-<div id="google_translate_element" style="position: fixed; top: 10px; right: 10px; z-index: 999;"></div>
-
 <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'en,hi,fr,es,de,pa,zh-CN,ja',
+      pageLanguage: 'en', // Your default site language
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE
     }, 'google_translate_element');
   }
