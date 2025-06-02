@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me - WhatsApp Redirect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f1a;
+      color: #fff;
+      padding: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #00e0ff;
+    }
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      background: #181828;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #2c2c3d;
+      color: #fff;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #00e0ff;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Contact Me on WhatsApp</h2>
+
+  <form id="whatsappForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send via WhatsApp</button>
+  </form>
+
+  <script>
+    document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const fullMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+      const phone = "917409939691"; // Country code + WhatsApp number
+      const whatsappUrl = `https://wa.me/${phone}?text=${fullMessage}`;
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+
+</body>
+</html>
