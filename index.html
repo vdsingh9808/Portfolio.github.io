@@ -7,117 +7,194 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #1e1e2f, #301c2c);
-      color: #fff;
+      background-color: #0f0f1a;
+      color: #f0f0f0;
+      line-height: 1.6;
     }
-    header {
+    header, footer {
+      background: #1a1a2e;
       padding: 20px;
       text-align: center;
+    }
+    h1, h2, h3 {
+      color: #00e0ff;
     }
     nav {
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 10px;
+      flex-wrap: wrap;
+      background: #222233;
+      padding: 10px 0;
     }
     nav a {
       color: #fff;
       text-decoration: none;
-      font-weight: 600;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    h1 {
-      font-size: 48px;
-      margin-top: 20px;
-    }
-    .subtitle {
-      font-size: 18px;
-      color: #bbb;
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
     }
     .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+      margin-bottom: 50px;
     }
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background-color: #2a2a3d;
+    .projects, .skills, .experience, .contact {
+      background-color: #181828;
       padding: 20px;
-      border-radius: 12px;
-      transition: 0.3s;
+      border-radius: 10px;
     }
-    .card:hover {
-      background-color: #3c3c5c;
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      margin-bottom: 20px;
+      align-items: center;
     }
-    .card img {
+    .project-card img {
       width: 100%;
-      height: 250px;
-      object-fit: cover;
+      border-radius: 10px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills-list span {
+      background: #333;
+      padding: 10px 15px;
       border-radius: 8px;
     }
-    .card h3 {
-      margin: 15px 0 10px;
+    .experience ul {
+      list-style-type: disc;
+      padding-left: 20px;
     }
-    .card p {
-      font-size: 14px;
-      color: #ccc;
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #2b2b3d;
+      color: white;
     }
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #888;
+    form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00e0ff;
+      border: none;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>VISHWADEEP SINGH</h1>
-  <p class="subtitle">FULL STACK DEVELOPER | NODE.JS | REACT | DEVOPS</p>
+  <h1>Vishwadeep Singh</h1>
+  <p>Full Stack Developer | MERN Stack | DevOps | AWS</p>
 </header>
 
 <nav>
   <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
   <a href="#contact">Contact</a>
-  <a href="https://www.linkedin.com/in/vdsingh9808/" target="_blank">LinkedIn</a>
-  <a href="https://github.com/vdsingh9808" target="_blank">GitHub</a>
 </nav>
 
-<section class="section" id="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    <div class="card">
+<div class="container">
+  <section class="section projects" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-card">
       <img src="img/autox.jpg" alt="AutoX">
-      <h3>AutoX</h3>
-      <p>An automotive news website delivering the latest car reviews, industry news, and expert insights.</p>
+      <div>
+        <h3>AutoX</h3>
+        <p>Automotive news and reviews portal using PHP and transitioning to Node.js. Optimized for SEO and scalability with AWS Lambda & EC2.</p>
+      </div>
     </div>
-    <div class="card">
+    <div class="project-card">
       <img src="img/oyetrips.png" alt="OyeTrips">
-      <h3>OyeTrips</h3>
-      <p>A travel booking platform offering flights, hotels, and holiday packages with an easy-to-use interface.</p>
+      <div>
+        <h3>OyeTrips</h3>
+        <p>Travel booking engine with CodeIgniter backend and advanced package management modules for seamless travel experiences.</p>
+      </div>
     </div>
-    <div class="card">
+    <div class="project-card">
       <img src="img/Convergence-Plus-Project.jpg" alt="Convergence Plus">
-      <h3>Convergence Plus</h3>
-      <p>A news portal focused on telecommunications and technology convergence with industry updates.</p>
+      <div>
+        <h3>Convergence Plus</h3>
+        <p>Industry-grade news portal built using PHP/.NET with advanced CMS and editorial workflow features.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="img/autoX-P.jpg" alt="AutoX Portal UI">
-      <h3>AutoX Portal UI</h3>
-      <p>Redesigned UI with responsive layout and faster performance for the AutoX automotive platform.</p>
+    <div class="project-card">
+      <img src="/mnt/data/comnet exhibition.jpg" alt="Comnet Exhibitions">
+      <div>
+        <h3>Comnet Exhibitions</h3>
+        <p>Business development platform for global exhibitions built with scalable APIs and media CMS.</p>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="project-card">
+      <img src="/mnt/data/convergenceindia.jpg" alt="Convergence India Expo">
+      <div>
+        <h3>Convergence India Expo</h3>
+        <p>India's biggest tech expo web portal—integrated digital showcase for exhibitors, press, and registration APIs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>MERN Stack</span>
+      <span>Node.js</span>
+      <span>React.js</span>
+      <span>PostgreSQL</span>
+      <span>AWS (EC2, Lambda)</span>
+      <span>Docker</span>
+      <span>Jenkins</span>
+      <span>CI/CD</span>
+      <span>Core PHP</span>
+      <span>CodeIgniter</span>
+    </div>
+  </section>
+
+  <section class="section experience" id="experience">
+    <h2>Experience</h2>
+    <div>
+      <h3>Web Developer – Exhibition India Group (2021 – Present)</h3>
+      <ul>
+        <li>Led AutoX and Xitetech backend/frontend development.</li>
+        <li>Implemented CI/CD with Jenkins & AWS DevOps tools.</li>
+        <li>Improved server-side rendering and SEO for thousands of listings.</li>
+      </ul>
+      <h3>Web Developer – SRDV Pvt. Ltd. (2018 – 2021)</h3>
+      <ul>
+        <li>Developed 10+ travel websites including Oyetrips and Rubitrip.</li>
+        <li>Integrated custom APIs for flight and hotel management.</li>
+        <li>Upgraded legacy codebases to MVC structures using Laravel & CI.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</div>
 
 <footer>
-  &copy; 2025 Vishwadeep Singh. All rights reserved.
+  &copy; 2025 Vishwadeep Singh. Portfolio Page.
 </footer>
 
 </body>
