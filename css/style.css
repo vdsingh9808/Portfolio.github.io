@@ -264,3 +264,20 @@ div.desc {
   display: table;
   clear: both;
 }
+
+.responsive {
+  padding: 5px;
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.gallery img {
+  border-radius: 8px;
+}
+
+.desc {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
