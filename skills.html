@@ -8,187 +8,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0f0f1a;
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
-    nav {
-      background-color: transparent;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #00e0ff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
-    }
-    nav a:hover {
-      color: #80ffff;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 0 15px #00e0ff;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      font-size: 36px;
-      color: #00e0ff;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 16px;
-      color: #b0c4de;
-      letter-spacing: 2px;
-    }
-    .container {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .section {
-      margin-bottom: 60px;
-    }
-    h2 {
-      text-align: center;
-      color: #00e0ff;
-      margin-bottom: 30px;
-    }
-
-    /* Skills Section */
-    .skills-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .skill-box {
-      background-color: #181828;
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #2c2c3d;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-    .skill-box span {
-      font-weight: 600;
-      font-size: 14px;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .skill-box span i {
-      font-size: 20px;
-    }
-    .skill-desc {
-      margin: 0;
-      font-size: 0.9rem;
-      line-height: 1.4;
-      color: #ccc;
-    }
-
-    /* Tech Stack Section */
-    .tech-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-    }
-    .tech-list a {
-      background-color: #181828;
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #2c2c3d;
-      color: #fff;
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      transition: background 0.2s;
-    }
-    .tech-list a:hover {
-      background-color: #24243a;
-    }
-    .tech-list img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-    }
-    .tech-list span {
-      font-size: 14px;
-      font-weight: 500;
-      color: #fff;
-    }
-
-    footer {
-      background: #181828;
-      color: #ccc;
-      padding: 40px 20px;
-    }
-    footer .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    footer h3 {
-      color: #00e0ff;
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-    footer p,
-    footer a {
-      color: #00e0ff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    footer .social-icons a {
-      margin: 0 10px;
-      color: #ccc;
-      font-size: 24px;
-      transition: color 0.2s;
-    }
-    footer .social-icons a:hover {
-      color: #00e0ff;
-    }
-    footer .download-cv {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-      font-size: 14px;
-      color: #00e0ff;
-    }
-    footer p.copy {
-      text-align: center;
-      font-size: 14px;
-      color: #888;
-      margin-top: 30px;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background-color: #0f0f1a; color: #f0f0f0; }
+    nav { background-color: transparent; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; color: #00e0ff; text-decoration: none; font-weight: 600; font-size: 14px; }
+    header { text-align: center; padding: 40px 20px; }
+    header img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 15px #00e0ff; margin-bottom: 20px; }
+    header h1 { font-size: 36px; color: #00e0ff; }
+    header p { font-size: 16px; color: #b0c4de; letter-spacing: 2px; }
+    .container { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
+    .section { margin-bottom: 60px; }
+    h2 { text-align: center; color: #00e0ff; margin-bottom: 30px; }
+    .skills-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .skills-list span, .skills-list a { background-color: #181828; padding: 20px; border-radius: 10px; font-weight: 500; font-size: 14px; color: #fff; display: flex; flex-direction: column; align-items: center; gap: 10px; border: 1px solid #2c2c3d; text-decoration: none; }
+    .skills-list img { width: 60px; height: auto; }
+    .skills-list span i { font-size: 20px; }
+    footer { text-align: center; padding: 30px; color: #888; font-size: 14px; }
   </style>
 </head>
 <body>
@@ -206,71 +41,91 @@
   </header>
 
   <div class="container">
-    <section class="section" id="skills">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <div class="skill-box">
-          <span><i class="fab fa-node-js"></i> Node.js (API, backend services)</span>
-          <p class="skill-desc">
-            A JavaScript runtime (built on Chrome’s V8 engine) for developing fast, non-blocking, event-driven backend APIs and microservices.
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fab fa-react"></i> React.js (SPA, dynamic UIs)</span>
-          <p class="skill-desc">
-            A component-based library that uses a virtual DOM to build responsive single-page applications with dynamic user interfaces.
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fab fa-js"></i> JavaScript (ES6+)</span>
-          <p class="skill-desc">
-            The core scripting language for both client and server, featuring modern syntax such as arrow functions, modules, and promises.
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fas fa-code"></i> PHP, Laravel, CodeIgniter</span>
-          <p class="skill-desc">
-            PHP is a server-side language; Laravel is a full-featured MVC framework with Eloquent ORM and Blade templating, while CodeIgniter is a lightweight MVC framework ideal for rapid development.
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fas fa-cloud"></i> AWS (EC2, Lambda, S3)</span>
-          <p class="skill-desc">
-            EC2 provides scalable virtual servers; Lambda offers serverless function execution; S3 is used for durable, high-availability object storage.
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fas fa-cogs"></i> DevOps, Docker, CI/CD, Jenkins</span>
-          <p class="skill-desc">
-            DevOps practices automate development and operations; Docker containerizes applications; CI/CD pipelines (e.g., Jenkins) automate builds, tests, and deployments.
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fas fa-database"></i> PostgreSQL, MySQL</span>
-          <p class="skill-desc">
-            PostgreSQL is an advanced open-source relational database with ACID compliance; MySQL is a widely used RDBMS known for reliability and ease of use.
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fab fa-html5"></i> HTML5/CSS3, Bootstrap</span>
-          <p class="skill-desc">
-            HTML5 structures web content with semantic tags; CSS3 provides modern styling features; Bootstrap offers a responsive grid system and prebuilt components.
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fas fa-tachometer-alt"></i> SEO & Performance Optimization</span>
-          <p class="skill-desc">
-            Techniques for improving search ranking (meta tags, structured data) and site speed (minification, lazy loading, server-side rendering, performance monitoring).
-          </p>
-        </div>
-        <div class="skill-box">
-          <span><i class="fab fa-git-alt"></i> Git, GitHub</span>
-          <p class="skill-desc">
-            Git is a distributed version control system for tracking code changes; GitHub hosts repositories and enables collaboration through pull requests and issue tracking.
-          </p>
-        </div>
-      </div>
-    </section>
+   <section class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <!-- Node.js Skill Box -->
+    <div class="skill-box">
+      <span><i class="fab fa-node-js"></i> Node.js (API, backend services)</span>
+      <p class="skill-box">
+        A JavaScript runtime built on Chrome’s V8 engine, ideal for creating non-blocking, event-driven backend services and RESTful APIs.
+      </p>
+    </div>
+
+    <!-- React.js Skill Box -->
+    <div class="skill-box">
+      <span><i class="fab fa-react"></i> React.js (SPA, dynamic UIs)</span>
+      <p class="skill-box">
+        A component-based library using a virtual DOM to build fast, responsive single-page applications with dynamic user interfaces.
+      </p>
+    </div>
+
+    <!-- JavaScript (ES6+) Skill Box -->
+    <div class="skill-box">
+      <span><i class="fab fa-js"></i> JavaScript (ES6+)</span>
+      <p class="skill-box">
+        The core scripting language for web development, featuring modern syntax such as arrow functions, modules, async/await, and Promises.
+      </p>
+    </div>
+
+    <!-- PHP, Laravel, CodeIgniter Skill Box -->
+    <div class="skill-box">
+      <span><i class="fas fa-code"></i> PHP, Laravel, CodeIgniter</span>
+      <p class="skill-box">
+        Server-side technologies: PHP powers dynamic websites; Laravel provides a full-featured MVC framework; CodeIgniter offers a lightweight MVC structure for rapid development.
+      </p>
+    </div>
+
+    <!-- AWS (EC2, Lambda, S3) Skill Box -->
+    <div class="skill-box">
+      <span><i class="fas fa-cloud"></i> AWS (EC2, Lambda, S3)</span>
+      <p class="skill-box">
+        Cloud services: EC2 for scalable virtual servers, Lambda for serverless compute functions, and S3 for durable, high-availability object storage.
+      </p>
+    </div>
+
+    <!-- DevOps, Docker, CI/CD, Jenkins Skill Box -->
+    <div class="skill-box">
+      <span><i class="fas fa-cogs"></i> DevOps, Docker, CI/CD, Jenkins</span>
+      <p class="skill-box">
+        DevOps practices and tools for automating builds, tests, and deployments; Docker containerizes applications; Jenkins orchestrates CI/CD pipelines.
+      </p>
+    </div>
+
+    <!-- PostgreSQL, MySQL Skill Box -->
+    <div class="skill-box">
+      <span><i class="fas fa-database"></i> PostgreSQL, MySQL</span>
+      <p class="skill-box">
+        Relational databases: PostgreSQL offers advanced SQL features and ACID compliance; MySQL provides reliable, widely-used data storage for web applications.
+      </p>
+    </div>
+
+    <!-- HTML5/CSS3, Bootstrap Skill Box -->
+    <div class="skill-box">
+      <span><i class="fab fa-html5"></i> HTML5/CSS3, Bootstrap</span>
+      <p class="skill-box">
+        Frontend markup and styling: HTML5 structures semantic content; CSS3 enables modern responsive layouts; Bootstrap offers prebuilt components and a grid system.
+      </p>
+    </div>
+
+    <!-- SEO & Performance Optimization Skill Box -->
+    <div class="skill-box">
+      <span><i class="fas fa-tachometer-alt"></i> SEO & Performance Optimization</span>
+      <p class="skill-box">
+        Techniques for improving search rankings and page speed, including meta tags, structured data, code minification, lazy loading, and server-side rendering.
+      </p>
+    </div>
+
+    <!-- Git, GitHub Skill Box -->
+    <div class="skill-box">
+      <span><i class="fab fa-git-alt"></i> Git, GitHub</span>
+      <p class="skill-box">
+        Version control using Git for tracking code changes and GitHub for hosting repositories, pull requests, and collaborative workflows.
+      </p>
+    </div>
+  </div>
+</section>
+
 
     <section class="section" id="tech-stack">
       <h2>Technology Stack</h2>
@@ -346,4 +201,4 @@
     e.preventDefault();
   });
 </script>
- 
+
